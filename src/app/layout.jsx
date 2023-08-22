@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
@@ -15,12 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html className='bg-zinc-900 text-white' lang="en">
       <body className={inter.className}>
-        <link rel="icon" href="https://s.namemc.com/2d/skin/face.png?id=7ee5f095b8187b2f&scale=4" sizes="any" />
-        <div className='container mx-auto h-full min-h-[calc(100vh-60px)]'>
+        <div className='flex flex-col min-h-screen'>
           <Navbar />
-          <div id='content'>{children}</div>
+          <main className='container mx-auto flex-1'>{children}</main>
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   )
