@@ -1,12 +1,12 @@
-import GithubLink from "./GithubLink";
+import GithubLink from './GithubLink';
 
 export default function Footer() {
   return (
-    <footer className='bg-zinc-800/30 border-t border-zinc-800 p-4 w-full'>
-      <div className="container mx-auto flex justify-between items-center">
+    <footer className="bg-zinc-800/30 border-t border-zinc-800 w-full p-4 h-[72px]">
+      <div className="container mx-auto flex justify-between items-center h-full">
         <span>made by @KryptonFox, 2023</span>
-        <GithubLink/>
+        <GithubLink />
       </div>
     </footer>
-  )
+  );
 }
