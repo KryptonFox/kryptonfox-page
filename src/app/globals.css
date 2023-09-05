@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    *{
+        --header-h: 92px;
+        --footer-h: 72px;
+    }
+}

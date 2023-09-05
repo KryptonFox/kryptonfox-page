@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="flex flex-col items-center min-h-screen">
           <Navbar />
-          <main className="container mt-[92px] mx-auto flex-1 px-4">
+          <main className="container mt-[var(--header-h)] mx-auto flex-1 px-4">
             {children}
           </main>
           <Footer />
