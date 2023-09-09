@@ -1,15 +1,18 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import Navbar from '@/app/navbar';
+import Footer from '@/app/footer';
 import { Analytics } from '@vercel/analytics/react';
+import React from 'react';
+import { Metadata } from 'next';
+
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
   weight: ['400', '600', '700', '800'],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'KryptonFox',
   description: 'personal page of KryptonFox',
 };

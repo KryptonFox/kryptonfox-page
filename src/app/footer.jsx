@@ -1,4 +1,4 @@
-import GithubLink from './GithubLink';
+import GithubLink from '../components/GithubLink';
 
 export default function Footer() {
   return (

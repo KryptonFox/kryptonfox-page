@@ -1,5 +1,6 @@
+import React from 'react'
 import Link from 'next/link';
-import Tab from './Tab';
+import Tab from '../components/Tab';
 
 export default function Navbar() {
   return (

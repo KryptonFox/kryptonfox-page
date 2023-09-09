@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Tab({ href, name }) {
+export default function Tab({ href, name }: Tab) {
   return (
     <Link
       href={href}

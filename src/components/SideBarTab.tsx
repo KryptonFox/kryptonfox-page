@@ -2,9 +2,8 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
-export default function SideBarTab({ name, href }) {
+export default function SideBarTab({ name, href }: Tab) {
   const pathname = usePathname();
   return (
     <Link
