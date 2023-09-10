@@ -1,4 +1,9 @@
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: 'Ты думал здесь что-то будет?',
+};
 
 export default function facts() {
   return (
@@ -9,9 +14,8 @@ export default function facts() {
         height="450"
         src="https://www.youtube.com/embed/PkT0PJwy8mI?controls=0"
         title="Ты думал здесь что-то будет?"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );

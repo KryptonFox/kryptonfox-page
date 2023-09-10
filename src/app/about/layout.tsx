@@ -1,7 +1,8 @@
 import SideBarTab from '@/components/SideBarTab';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: "KryptonFox - About"
+export const metadata: Metadata = {
+  title: "Обо мне"
 }
 
 export default function layout({ children }) {
