@@ -5,6 +5,21 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        mono: ['var(--font-roboto-mono)'],
+        emoji: ['var(--font-emoji)'],
+      },
+      keyframes: {
+        introTop: {
+          '0%': { transform: 'translateY(-50vh)', opacity: 0 },
+        },
+      },
+      animation: {
+        introTop: 'introTop 1s',
+      },
+    },
+  },
   plugins: [],
 };
