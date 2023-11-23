@@ -13,12 +13,13 @@ export default function page() {
         <p className="flex-1 min-w-[220px] max-w-[600px] px-4 pb-4 text-lg">
           Классная игра. Одна из первых игр в которые я начал играть. Играю в
           неё до сих пор. Играю в основном на лицензионных серверах с
-          мини-играми ( Hypixel и т.д. ), а также на приватных
-          ( <a href="http://pepeland.net" className='underline'>Pepeland</a> ). Если хочешь можешь поиграть со мной)
+          мини-играми, а также на приватных
         </p>
         <ProfileLayout />
       </div>
-      <p className='p-4 text-xl'>Желания играть во что-то другое неть, мне лень ._.</p>
+      <p className="p-4 text-xl">
+        Иногда играю во что-то другое по настроению :)
+      </p>
     </>
   );
 }

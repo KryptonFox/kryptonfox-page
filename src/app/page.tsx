@@ -5,14 +5,14 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div className="px-4 py-3 flex flex-col items-center animate-introTop">
+    <div className="px-4 py-3 flex flex-col items-center animate-introTop h-[calc(100vh-var(--header-h))]">
       <h1 className="text-[2.5rem] font-extrabold after:content-['Fox🦊'] after:text-orange-600">
         Hi, i`m Krypton
       </h1>
       <div className="mt-8 px-8 py-4 border border-zinc-700 rounded-xl ">
         <ul className="list-[square] font-mono text-lg space-y-2 w-[280px]">
           <li>
-            15 y.o. <Emoji>👨‍🎓</Emoji>
+            16 y.o. <Emoji>👨‍🎓</Emoji>
           </li>
           <li>
             <Emoji>🎂</Emoji> 04th October
@@ -30,7 +30,10 @@ export default function Page() {
             <Emoji>🐾</Emoji> Furry Fox <Emoji>🦊</Emoji>
           </li>
           <li className="list-none text-center">
-            <Link href={'/about/socials'} className="flex justify-center items-center hover:underline transition">
+            <Link
+              href={'/about/socials'}
+              className="flex justify-center items-center hover:underline transition"
+            >
               <span>Socials</span>
               <ArrowTopRightOnSquareIcon className="ml-1 w-5 h-5" />
             </Link>
@@ -44,7 +47,6 @@ export default function Page() {
         height="252"
         className="my-8"
       />
-      <p>Не волнуйтесь, дальше всё на русском)</p>
     </div>
   );
 }
