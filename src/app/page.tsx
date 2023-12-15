@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div className="px-4 py-3 flex flex-col items-center animate-introTop h-[calc(100vh-var(--header-h))]">
+    <div className="px-4 py-3 flex flex-col items-center animate-introTop">
       <h1 className="text-[2.5rem] font-extrabold after:content-['Fox🦊'] after:text-orange-600">
         Hi, i`m Krypton
       </h1>

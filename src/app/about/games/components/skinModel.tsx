@@ -6,7 +6,6 @@ import * as THREE from 'three';
 import React, { useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three-stdlib';
-import { useFrame } from '@react-three/fiber';
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -29,7 +28,6 @@ type GLTFResult = GLTF & {
 export default function Skin(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/skin.gltf') as GLTFResult;
   const meshRef = useRef(null);
-  useFrame(() => (meshRef.current.rotation.y += 0.01));
   return (
     <group ref={meshRef} {...props} dispose={null}>
       <group position={[0, 1.5, 0]} rotation={[0.1051, -0.0868, 0.0091]}>

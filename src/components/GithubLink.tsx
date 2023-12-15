@@ -8,7 +8,13 @@ export default function GithubLink() {
       target="_blank"
     >
       <span className="hidden md:inline">Source code</span>
-      <Image src="/social/github.png" alt="" width={25} height={25} className='w-auto' />
+      <Image
+        src="/social/github.png"
+        alt=""
+        width={25}
+        height={25}
+        className="w-auto"
+      />
     </a>
   );
 }

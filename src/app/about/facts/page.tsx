@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 
 export default function facts() {
   return (
-    <div className="flex flex-col items-center py-2">
-      <h1 className="text-[2.5rem] font-extrabold mb-4">Интересные факты</h1>
+    <div className="flex flex-col items-center">
+      <h1 className="text-4xl font-extrabold mb-4">Интересные факты</h1>
       <iframe
         width="800"
         height="450"

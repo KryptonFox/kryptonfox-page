@@ -13,7 +13,7 @@ export default function SocialLink({ title, href, imgSrc }: props) {
       target="_blank"
       href={href}
     >
-      <div className='h-[50px] w-[50px] flex items-center'>
+      <div className="h-[50px] w-[50px] flex items-center">
         <Image src={imgSrc} alt="" width={50} height={50} />
       </div>
       <span className="mt-2">{title}</span>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
 import Tab from '../components/Tab';
 
@@ -13,7 +13,7 @@ export default function Navbar() {
           yptonFox
         </Link>
         <div className="space-x-4 justify-between">
-          <Tab href="/facts" name="Интересные факты" />
+          <Tab href="/about/facts" name="Интересные факты" />
           <Tab href="/about" name="Обо мне" />
         </div>
       </nav>

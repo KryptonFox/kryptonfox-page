@@ -40,11 +40,11 @@ export default function RootLayout({ children }) {
       <body
         className={`flex flex-col items-center min-h-screen ${inter.className} ${notoEmoji.variable} ${robotoMono.variable}`}
       >
-          <Navbar />
-          <main className="container mt-[var(--header-h)] mx-auto flex-1 px-4">
-            {children}
-          </main>
-          <Footer />
+        <Navbar />
+        <main className="container mt-[var(--header-h)] mx-auto flex-1">
+          {children}
+        </main>
+        <Footer />
         <Analytics />
       </body>
     </html>

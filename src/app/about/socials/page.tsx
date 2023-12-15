@@ -3,7 +3,7 @@ import SocialLink from './components/socialLink';
 export default function about() {
   return (
     <>
-      <h1 className="text-4xl font-extrabold">Социальные сети</h1>
+      <h1 className="text-4xl text-center font-extrabold">Социальные сети</h1>
       <div className="flex flex-wrap justify-center gap-4 mt-4">
         <SocialLink
           title="@Krypt0nF"
