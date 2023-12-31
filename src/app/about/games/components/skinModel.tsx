@@ -21,16 +21,20 @@ type GLTFResult = GLTF & {
     Right_Leg_Layer: THREE.Mesh;
     Left_Leg: THREE.Mesh;
     Left_Leg_Layer: THREE.Mesh;
+    Right_ear: THREE.Mesh;
+    Snout: THREE.Mesh;
+    Tail: THREE.Mesh;
+    Left_ear: THREE.Mesh;
+    Up_ears: THREE.Mesh;
   };
   materials: {};
 };
 
-export default function Skin(props: JSX.IntrinsicElements['group']) {
+export default function SkinModel(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/skin.gltf') as GLTFResult;
-  const meshRef = useRef(null);
   return (
-    <group ref={meshRef} {...props} dispose={null}>
-      <group position={[0, 1.5, 0]} rotation={[0.1051, -0.0868, 0.0091]}>
+    <group {...props} dispose={null}>
+      <group position={[0, 1.5, 0]}>
         <mesh
           castShadow
           receiveShadow
@@ -62,71 +66,106 @@ export default function Skin(props: JSX.IntrinsicElements['group']) {
           position={[0, -1.5, 0]}
         />
       </group>
-      <group position={[0.3125, 1.375, 0]} rotation={[0.1745, 0, 0]}>
+      <group position={[0.313, 1.375, 0]}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Right_Arm.geometry}
           material={nodes.Right_Arm.material}
-          position={[-0.3125, -1.375, 0]}
+          position={[-0.313, -1.375, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Right_Arm_Layer.geometry}
           material={nodes.Right_Arm_Layer.material}
-          position={[-0.3125, -1.375, 0]}
+          position={[-0.313, -1.375, 0]}
         />
       </group>
-      <group position={[-0.3125, 1.375, 0]} rotation={[-0.2094, 0, 0]}>
+      <group position={[-0.313, 1.375, 0]}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Left_Arm.geometry}
           material={nodes.Left_Arm.material}
-          position={[0.3125, -1.375, 0]}
+          position={[0.313, -1.375, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Left_Arm_Layer.geometry}
           material={nodes.Left_Arm_Layer.material}
-          position={[0.3125, -1.375, 0]}
+          position={[0.313, -1.375, 0]}
         />
       </group>
-      <group position={[0.1187, 0.75, 0]} rotation={[-0.1919, -0.0067, 0.0343]}>
+      <group position={[0.119, 0.75, 0]}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Right_Leg.geometry}
           material={nodes.Right_Leg.material}
-          position={[-0.1187, -0.75, 0]}
+          position={[-0.119, -0.75, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Right_Leg_Layer.geometry}
           material={nodes.Right_Leg_Layer.material}
-          position={[-0.1187, -0.75, 0]}
+          position={[-0.119, -0.75, 0]}
         />
       </group>
-      <group
-        position={[-0.1187, 0.75, 0]}
-        rotation={[0.1744, -0.0061, -0.0344]}
-      >
+      <group position={[-0.119, 0.75, 0]}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Left_Leg.geometry}
           material={nodes.Left_Leg.material}
-          position={[0.1187, -0.75, 0]}
+          position={[0.119, -0.75, 0]}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Left_Leg_Layer.geometry}
           material={nodes.Left_Leg_Layer.material}
-          position={[0.1187, -0.75, 0]}
+          position={[0.119, -0.75, 0]}
+        />
+      </group>
+      <group position={[-0.5, 0, -0.5]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Right_ear.geometry}
+          material={nodes.Right_ear.material}
+          position={[0.75, 1.75, 0.5]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Snout.geometry}
+          material={nodes.Snout.material}
+          position={[0.438, 1.5, 0.125]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Tail.geometry}
+          material={nodes.Tail.material}
+          position={[0.438, 0.625, 1.813]}
+          rotation={[0, Math.PI / 2, 0]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Left_ear.geometry}
+          material={nodes.Left_ear.material}
+          position={[0, 1.75, 0.5]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Up_ears.geometry}
+          material={nodes.Up_ears.material}
+          position={[0, 2, 0.375]}
         />
       </group>
     </group>

@@ -1,10 +1,10 @@
 export default function page() {
   return (
     <>
-      <h1 className="text-[3rem] font-extrabold">
+      <h1 className="text-4xl font-extrabold">
         А это просто пустая страница на которой ничего неть)
       </h1>
-      <p className="my-2">Чтоби жизнь мёдом не казалась</p>
+      <p className="my-2 text-2xl font-bold">Чтоби жизнь мёдом не казалась</p>
       <p className="text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, saepe
         reprehenderit. Dolor, atque. Quis veniam, hic minus eum natus atque, in

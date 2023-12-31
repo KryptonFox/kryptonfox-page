@@ -16,7 +16,7 @@ export default function Skin() {
         far: 1000,
       }}
     >
-      <ambientLight intensity={1} />
+      <ambientLight intensity={0.7} />
       <Group />
       <OrbitControls />
     </Canvas>
@@ -28,9 +28,9 @@ function Group() {
   useFrame(() => (groupRef.current.rotation.y += 0.01));
   return (
     <group ref={groupRef}>
-      <directionalLight position={[1, 1, 1]} intensity={1.6} />
-      <directionalLight position={[-1, 1, -1]} intensity={1.5} />
-      <directionalLight position={[0, 0, 1]} intensity={1.8} />
+      <directionalLight position={[1, 1, 1]} intensity={1.4} />
+      <directionalLight position={[-1, 1, -1]} intensity={1.4} />
+      <directionalLight position={[0, 0, 1]} intensity={1.4} />
       <SkinModel position={[0, -1, 0]} rotation={[0, 3.4, 0]} />
     </group>
   );

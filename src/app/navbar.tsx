@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Tab from '../components/Tab';
+import MobileMenu from './MobileMenu';
 
 export default function Navbar() {
   return (
@@ -12,9 +13,12 @@ export default function Navbar() {
         >
           yptonFox
         </Link>
-        <div className="space-x-4 justify-between">
-          <Tab href="/about/facts" name="Интересные факты" />
+        <div className="hidden md:block space-x-4">
+          <Tab href="/news" name="Новости" />
           <Tab href="/about" name="Обо мне" />
+        </div>
+        <div className="md:hidden">
+          <MobileMenu />
         </div>
       </nav>
     </header>

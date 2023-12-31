@@ -1,4 +1,4 @@
-import SocialLink from './components/socialLink';
+import SocialLink from './socialLink';
 
 export default function about() {
   return (
