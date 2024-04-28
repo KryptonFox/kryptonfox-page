@@ -1,5 +1,5 @@
 'use client';
-import SidebarTab from '@/components/SidebarTab';
+import SidebarTab from './../../components/SidebarTab';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import React, { Fragment } from 'react';
