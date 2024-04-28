@@ -1,5 +1,5 @@
 'use client';
-import SideBarTab from '@/components/SidebarTab';
+import SidebarTab from '@/components/SidebarTab';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import React, { Fragment } from 'react';
@@ -32,7 +32,7 @@ export default function MobileSidebar() {
         <Menu.Items className="pt-8 p-2 flex flex-col w-[250px] h-[calc(100vh-var(--header-h))] fixed top-[var(--header-h)] bg-zinc-950/40 border-r backdrop-blur-md border-yellow-400">
           {linkList.map(({ name, href }, i) => (
             <Menu.Item key={i}>
-              <SideBarTab name={name} href={href} />
+              <SidebarTab name={name} href={href} />
             </Menu.Item>
           ))}
         </Menu.Items>

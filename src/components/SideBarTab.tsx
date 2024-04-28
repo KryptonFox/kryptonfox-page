@@ -8,7 +8,7 @@ interface SidebartabProps {
   href: string;
 }
 
-export default function SideBarTab({ name, href }: SidebartabProps) {
+export default function SidebarTab({ name, href }: SidebartabProps) {
   const pathname = usePathname();
   return (
     <Link
