@@ -38,14 +38,14 @@ const robotoMono = Roboto_Mono({
 export default function RootLayout({ children }) {
   return (
     <html
-      className="bg-zinc-900 text-white overflow-x-hidden w-[100vw] scrollbar-thin scrollbar-track-zinc-900 scrollbar-thumb-zinc-800"
+      className="bg-zinc-950 text-white overflow-x-hidden w-[100vw] scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-900"
       lang="ru"
     >
       <body
         className={`flex flex-col items-center min-h-screen ${inter.className} ${notoEmoji.variable} ${robotoMono.variable}`}
       >
         <Navbar />
-        <main className="container mt-[var(--header-h)] mx-auto flex-1">
+        <main className="container min-h-[calc(100vh-var(--header-h))] mt-[var(--header-h)] mx-auto flex-1">
           {children}
         </main>
         <Footer />

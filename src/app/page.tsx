@@ -1,52 +1,16 @@
-import Emoji from '@/components/Emoji';
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
-import Image from 'next/image';
-import Link from 'next/link';
+import LinkButton from '@/components/LinkButton';
 
 export default function Page() {
   return (
-    <div className="px-4 py-3 flex flex-col items-center animate-introTop">
-      <h1 className="text-[2.5rem] font-extrabold after:content-['Fox🦊'] after:text-orange-600">
+    <div className="flex flex-col items-center justify-center min-h-[75vh]">
+      <h1 className="text-[2rem] md:text-[3.5rem] font-extrabold after:content-['Fox🦊'] after:text-orange-600">
         Hi, i`m Krypton
       </h1>
-      <div className="mt-8 px-8 py-4 border border-zinc-700 rounded-xl ">
-        <ul className="list-[square] font-mono text-lg space-y-2 w-[280px]">
-          <li>
-            16 y.o. <Emoji>👨‍🎓</Emoji>
-          </li>
-          <li>
-            <Emoji>🎂</Emoji> 04th October
-          </li>
-          <li>
-            <Emoji>🇷🇺</Emoji>, Saint-Petersburg
-          </li>
-          <li>
-            Loves programming <Emoji>💻</Emoji> and hiking <Emoji>🏕🏔</Emoji>
-          </li>
-          <li>
-            Playing Minecraft <Emoji>⛏</Emoji>
-          </li>
-          <li>
-            <Emoji>🐾</Emoji> Furry Fox <Emoji>🦊</Emoji>
-          </li>
-          <li className="list-none text-center">
-            <Link
-              href={'/about/socials'}
-              className="flex justify-center items-center hover:underline transition"
-            >
-              <span>Socials</span>
-              <ArrowTopRightOnSquareIcon className="ml-1 w-5 h-5" />
-            </Link>
-          </li>
-        </ul>
+      <div className="flex flex-wrap justify-center text-center text-sm md:text-base space-x-2">
+        <LinkButton href="/about">Обо мне</LinkButton>
+        <LinkButton href="/about/socials">Контакты</LinkButton>
+        <LinkButton href="/url-shortener">Сокращатель ссылок</LinkButton>
       </div>
-      <Image
-        src="/kotek.png"
-        alt="kotek"
-        width="238"
-        height="252"
-        className="my-8"
-      />
     </div>
   );
 }

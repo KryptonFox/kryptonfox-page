@@ -11,8 +11,8 @@ export default function about() {
           imgSrc="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
         />
         <SocialLink
-          title="KirikLit"
-          href="https://github.com/KirikLit"
+          title="KryptonFox"
+          href="https://github.com/KryptonFox"
           imgSrc="/social/github.png"
         />
         <SocialLink

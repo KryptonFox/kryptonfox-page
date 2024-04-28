@@ -3,7 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export default function SideBarTab({ name, href }: Tab) {
+interface SidebartabProps {
+  name: string;
+  href: string;
+}
+
+export default function SideBarTab({ name, href }: SidebartabProps) {
   const pathname = usePathname();
   return (
     <Link

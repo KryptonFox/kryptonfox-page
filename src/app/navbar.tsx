@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Tab from '../components/Tab';
+import Tab from '../components/NavbarTab';
 import MobileMenu from './MobileMenu';
 
 export default function Navbar() {

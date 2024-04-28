@@ -1,6 +1,11 @@
 import Link from 'next/link';
 
-export default function Tab({ href, name }: Tab) {
+interface NavbartabProps {
+  name: string;
+  href: string;
+}
+
+export default function Tab({ href, name }: NavbartabProps) {
   return (
     <Link
       href={href}

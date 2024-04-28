@@ -1,4 +1,4 @@
-import SideBarTab from '@/components/SideBarTab';
+import SideBarTab from '@/components/SidebarTab';
 import { Metadata } from 'next';
 import Sidebar from './Sidebar';
 

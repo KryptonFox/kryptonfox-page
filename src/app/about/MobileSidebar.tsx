@@ -1,8 +1,9 @@
 'use client';
-import SideBarTab from '@/components/SideBarTab';
+import SideBarTab from '@/components/SidebarTab';
 import { Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import React, { Fragment } from 'react';
+import { linkList } from './sidebarList';
 
 export default function MobileSidebar() {
   return (
@@ -29,24 +30,11 @@ export default function MobileSidebar() {
         leaveTo="translate-x-[-100%] opacity-0"
       >
         <Menu.Items className="pt-8 p-2 flex flex-col w-[250px] h-[calc(100vh-var(--header-h))] fixed top-[var(--header-h)] bg-zinc-950/40 border-r backdrop-blur-md border-yellow-400">
-          <Menu.Item>
-            <SideBarTab name="Обо мне" href="/about" />
-          </Menu.Item>
-          <Menu.Item>
-            <SideBarTab name="Интересные факты" href="/about/facts" />
-          </Menu.Item>
-          <Menu.Item>
-            <SideBarTab name="Соц. сети" href="/about/socials" />
-          </Menu.Item>
-          <Menu.Item>
-            <SideBarTab name="Игры" href="/about/games" />
-          </Menu.Item>
-          <Menu.Item>
-            <SideBarTab name="Хобби" href="/about/hobbies" />
-          </Menu.Item>
-          <Menu.Item>
-            <SideBarTab name="Пустая страница" href="/about/empty" />
-          </Menu.Item>
+          {linkList.map(({ name, href }, i) => (
+            <Menu.Item key={i}>
+              <SideBarTab name={name} href={href} />
+            </Menu.Item>
+          ))}
         </Menu.Items>
       </Transition>
     </Menu>
