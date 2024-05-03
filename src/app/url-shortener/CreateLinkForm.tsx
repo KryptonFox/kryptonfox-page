@@ -55,7 +55,10 @@ export default function CreateLinkForm() {
 
   return (
     <div className="md:w-[900px] mx-auto p-2">
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 border-b border-zinc-800 pb-4 mb-4">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col space-y-4 border-b border-zinc-800 pb-4 mb-4"
+      >
         <label className="flex flex-wrap justify-between text-2xl font-extrabold">
           Ссылка -
           <input
@@ -82,10 +85,19 @@ export default function CreateLinkForm() {
           Создать короткую ссылку
         </button>
       </form>
-      <div className='flex flex-col items-center'>
-
-      <p className='text-center font-extrabold text-2xl'>{statusMessage}</p>
-      {shortlink ? <a className='underline text-zinc-400 hover:text-zinc-500' target='blank' href={shortlink}>{shortlink}</a> : ''}
+      <div className="flex flex-col items-center">
+        <p className="text-center font-extrabold text-2xl">{statusMessage}</p>
+        {shortlink ? (
+          <a
+            className="underline text-zinc-400 hover:text-zinc-500"
+            target="blank"
+            href={shortlink}
+          >
+            {shortlink}
+          </a>
+        ) : (
+          ''
+        )}
       </div>
     </div>
   );

@@ -9,5 +9,4 @@ export let linkList: Link[] = [
   { name: 'Интересные факты', href: '/about/facts' },
   { name: 'Игры', href: '/about/games' },
   { name: 'empty', href: '/about/empty' },
-
 ];
