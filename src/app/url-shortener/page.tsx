@@ -4,9 +4,12 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'Сокращатель ссылок | KryptonFox' },
-  description: 'Сокращатель ссылок от KryptonFox. Made with <3 by KryptonFox',
+  description: 'Fast and simple link shortener. Made with <3 by KryptonFox',
   openGraph: {
-    title: 'Сокращатель ссылок от KryptonFox. Made with <3 by KryptonFox',
+    title: 'Link shortener krfx.ru',
+    url: 'https://krfx.ru/',
+    type: 'website',
+    description: 'Fast and simple link shortener. Made with <3 by KryptonFox',
   },
 };
 

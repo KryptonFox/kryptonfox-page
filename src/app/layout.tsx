@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: 'Personal website of KryptonFox, the random furry fox programmer',
   openGraph: {
     title: 'KryptonFox',
+    url: 'https://krfox.ru/',
     type: 'website',
     description: 'I`m KryptonFox, furry fox, JS and TS programmer. This is my small website with some information about me and some other stuff'
   }
