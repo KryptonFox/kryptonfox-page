@@ -4,6 +4,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { absolute: 'Сокращатель ссылок | KryptonFox' },
+  description: 'Сокращатель ссылок от KryptonFox. Made with <3 by KryptonFox',
+  openGraph: {
+    title: 'Сокращатель ссылок от KryptonFox. Made with <3 by KryptonFox',
+  },
 };
 
 export default function page() {

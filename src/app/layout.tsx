@@ -9,7 +9,12 @@ import { Metadata, Viewport } from 'next';
 // Metadata
 export const metadata: Metadata = {
   title: { default: 'KryptonFox', template: 'KryptonFox | %s' },
-  description: 'personal page of KryptonFox',
+  description: 'Personal website of KryptonFox, the random furry fox programmer',
+  openGraph: {
+    title: 'KryptonFox',
+    type: 'website',
+    description: 'I`m KryptonFox, furry fox, JS and TS programmer. This is my small website with some information about me and some other stuff'
+  }
 };
 
 export const viewport: Viewport = {
