@@ -14,7 +14,7 @@ export default function Sidebar() {
           ))}
         </nav>
       </aside>
-      <aside className="md:hidden">
+      <aside className="md:hidden w-2 z-50">
         <MobileSidebar />
       </aside>
     </>

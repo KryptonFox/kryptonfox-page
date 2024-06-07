@@ -14,9 +14,9 @@ export default function MobileSidebar() {
       >
         {({ open }) =>
           open ? (
-            <XMarkIcon className="text-red-400 relative left-[210px] w-6 mx-2" />
+            <XMarkIcon className="text-red-400 w-6 mx-2" />
           ) : (
-            <Bars3Icon className="h6 mx-2 w-6 text-white" />
+            <Bars3Icon className="mx-2 w-6 text-white" />
           )
         }
       </Menu.Button>
@@ -29,7 +29,7 @@ export default function MobileSidebar() {
         leaveFrom="opacity-100"
         leaveTo="translate-x-[-100%] opacity-0"
       >
-        <Menu.Items className="pt-8 p-2 flex flex-col w-[250px] h-[calc(100vh-var(--header-h))] fixed top-[var(--header-h)] bg-zinc-950/40 border-r backdrop-blur-md border-yellow-400">
+        <Menu.Items className="pt-8 p-2 flex flex-col w-[250px] h-[calc(100vh-var(--header-h))] fixed top-[var(--header-h)] bg-zinc-950/70 border-r backdrop-blur-lg border-yellow-400">
           {linkList.map(({ name, href }, i) => (
             <Menu.Item key={i}>
               <SidebarTab name={name} href={href} />
