@@ -29,7 +29,7 @@ export default function MobileSidebar() {
         leaveFrom="opacity-100"
         leaveTo="translate-x-[-100%] opacity-0"
       >
-        <Menu.Items className="pt-8 p-2 flex flex-col w-[250px] h-[calc(100vh-var(--header-h))] fixed top-[var(--header-h)] bg-zinc-950/70 border-r backdrop-blur-lg border-yellow-400">
+        <Menu.Items className="pt-8 p-2 flex flex-col w-[250px] h-[calc(100vh-var(--header-h))] fixed top-[var(--header-h)] bg-zinc-950/50 border-r backdrop-blur-lg border-yellow-400">
           {linkList.map(({ name, href }, i) => (
             <Menu.Item key={i}>
               <SidebarTab name={name} href={href} />

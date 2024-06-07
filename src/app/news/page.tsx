@@ -4,6 +4,16 @@ import Post from './Post';
 export default function page() {
   return (
     <div className="flex flex-col items-center space-y-4 py-4">
+      <Post header='Обновление 1.2.0' date='07.06.24'>
+        <ul className="list-disc ml-5">
+          <li>Обновлена логика сокращателя ссылок и добавленка кнопка копирования для короткой ссылки</li>
+          <li>Обновлен раздел /about для мобильных устройств</li>
+          - Исправлена баг размытия меню для мобильных устройств при открытии /about/games и /about
+          <li>Частично изменена прозрачность и размытие в некоторых местах</li>
+          <li>Обновлён раздел /about/games</li>
+          <li>Добавлена поддержка OpenGraph</li>
+        </ul>
+      </Post>
       <Post header="Обновление 1.1.0" date="28.04.24">
         <ul className="list-disc ml-5">
           <li>Добавлен сокращатель ссылок {'"krfx"'}</li>
