@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+
+Crawl-Delay: 0
+
+Sitemap: krfox.ru/sitemap.xml
