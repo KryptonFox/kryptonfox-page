@@ -18,13 +18,13 @@ cd kryptonfox-page
 2. Установите библиотеки
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. Запустите сервер для разработки
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 4. Откройте [http://localhost:3000](http://localhost:3000) в браузере
