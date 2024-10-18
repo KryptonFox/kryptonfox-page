@@ -1,10 +1,9 @@
-import SideBarTab from '@/components/SidebarTab';
-import { Metadata } from 'next';
-import Sidebar from './Sidebar';
+import { Metadata } from 'next'
+import Sidebar from './Sidebar'
 
 export const metadata: Metadata = {
   title: 'Обо мне',
-};
+}
 
 export default function layout({ children }) {
   return (
@@ -14,5 +13,5 @@ export default function layout({ children }) {
         {children}
       </article>
     </div>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function Hobbies() {
   return (
@@ -7,5 +7,5 @@ export default function Hobbies() {
       <h2 className="text-3xl">Программирование</h2>
       <p>Раздел в разработке</p>
     </>
-  );
+  )
 }

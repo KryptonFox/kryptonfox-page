@@ -1,14 +1,14 @@
-'use client';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+'use client'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface SidebartabProps {
-  name: string;
-  href: string;
+  name: string
+  href: string
 }
 
 export default function SidebarTab({ name, href }: SidebartabProps) {
-  const pathname = usePathname();
+  const pathname = usePathname()
   return (
     <Link
       className={
@@ -20,5 +20,5 @@ export default function SidebarTab({ name, href }: SidebartabProps) {
     >
       {name}
     </Link>
-  );
+  )
 }

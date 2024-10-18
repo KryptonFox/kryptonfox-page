@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 export default function GithubLink() {
   return (
     <a
-      className="flex items-center gap-2 border py-1.5 px-3 border-white rounded-lg hover:bg-zinc-900 transition-colors"
+      className="flex gap-2 items-center py-1.5 px-3 rounded-lg border border-white transition-colors hover:bg-zinc-900"
       href="https://github.com/KirikLit/kryptonfox-page"
       target="_blank"
     >
@@ -16,5 +16,5 @@ export default function GithubLink() {
         className="w-auto"
       />
     </a>
-  );
+  )
 }

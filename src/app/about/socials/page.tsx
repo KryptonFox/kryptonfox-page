@@ -1,10 +1,10 @@
-import SocialLink from './socialLink';
+import SocialLink from './socialLink'
 
 export default function about() {
   return (
     <>
-      <h1 className="text-4xl text-center font-extrabold">Социальные сети</h1>
-      <div className="flex flex-wrap justify-center gap-4 mt-4">
+      <h1 className="text-4xl font-extrabold text-center">Социальные сети</h1>
+      <div className="flex flex-wrap gap-4 justify-center mt-4">
         <SocialLink
           title="@Krypt0nF"
           href="https://t.me/Krypt0nF"
@@ -27,5 +27,5 @@ export default function about() {
         />
       </div>
     </>
-  );
+  )
 }

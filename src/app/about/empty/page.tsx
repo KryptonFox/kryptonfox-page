@@ -174,5 +174,5 @@ export default function page() {
         quo! Distinctio.
       </p>
     </>
-  );
+  )
 }
