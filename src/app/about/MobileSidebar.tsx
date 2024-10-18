@@ -1,9 +1,9 @@
-'use client';
-import SidebarTab from '@/components/SidebarTab';
-import { Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import React, { Fragment } from 'react';
-import { linkList } from './sidebarList';
+'use client'
+import SidebarTab from '@/components/SidebarTab'
+import { Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import React, { Fragment } from 'react'
+import { linkList } from './sidebarList'
 
 export default function MobileSidebar() {
   return (
@@ -14,7 +14,7 @@ export default function MobileSidebar() {
       >
         {({ open }) =>
           open ? (
-            <XMarkIcon className="text-red-400 w-6 mx-2" />
+            <XMarkIcon className="mx-2 w-6 text-red-400" />
           ) : (
             <Bars3Icon className="mx-2 w-6 text-white" />
           )
@@ -38,5 +38,5 @@ export default function MobileSidebar() {
         </Menu.Items>
       </Transition>
     </Menu>
-  );
+  )
 }

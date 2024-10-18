@@ -1,21 +1,25 @@
-import React from 'react';
-import Post from './Post';
+import React from 'react'
+import Post from './Post'
 
 export default function page() {
   return (
-    <div className="flex flex-col items-center space-y-4 py-4">
-      <Post header='Обновление 1.2.0' date='07.06.24'>
-        <ul className="list-disc ml-5">
-          <li>Обновлена логика сокращателя ссылок и добавленка кнопка копирования для короткой ссылки</li>
-          <li>Обновлен раздел /about для мобильных устройств</li>
-          - Исправлена баг размытия меню для мобильных устройств при открытии /about/games и /about
+    <div className="flex flex-col items-center py-4 space-y-4">
+      <Post header="Обновление 1.2.0" date="07.06.24">
+        <ul className="ml-5 list-disc">
+          <li>
+            Обновлена логика сокращателя ссылок и добавленка кнопка копирования
+            для короткой ссылки
+          </li>
+          <li>Обновлен раздел /about для мобильных устройств</li>- Исправлена
+          баг размытия меню для мобильных устройств при открытии /about/games и
+          /about
           <li>Частично изменена прозрачность и размытие в некоторых местах</li>
           <li>Обновлён раздел /about/games</li>
           <li>Добавлена поддержка OpenGraph</li>
         </ul>
       </Post>
       <Post header="Обновление 1.1.0" date="28.04.24">
-        <ul className="list-disc ml-5">
+        <ul className="ml-5 list-disc">
           <li>Добавлен сокращатель ссылок {'"krfx"'}</li>
           <li>Переделана главная страница</li>
           <li>Немного изменена цветовая окраска сайта</li>
@@ -24,7 +28,7 @@ export default function page() {
         </ul>
       </Post>
       <Post header="Обновление 1.0.0" date="31.12.23">
-        <ul className="list-disc ml-5">
+        <ul className="ml-5 list-disc">
           <li>Добавлен раздел «Новости»</li>
           <li>Next.js обновлён до версии 14.0.4</li>
           <li>Сайт оптимизирован под телефоны (сделаны мобильные меню)</li>
@@ -35,5 +39,5 @@ export default function page() {
         </ul>
       </Post>
     </div>
-  );
+  )
 }

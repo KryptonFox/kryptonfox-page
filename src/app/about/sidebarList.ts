@@ -1,6 +1,6 @@
 interface Link {
-  name: string;
-  href: string;
+  name: string
+  href: string
 }
 
 export let linkList: Link[] = [
@@ -9,4 +9,4 @@ export let linkList: Link[] = [
   { name: 'Интересные факты', href: '/about/facts' },
   { name: 'Игры', href: '/about/games' },
   { name: 'empty', href: '/about/empty' },
-];
+]

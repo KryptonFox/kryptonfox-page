@@ -1,14 +1,14 @@
-import { Metadata } from 'next';
-import React from 'react';
+import { Metadata } from 'next'
+import React from 'react'
 
 export const metadata: Metadata = {
   title: 'Ты думал здесь что-то будет?',
-};
+}
 
 export default function facts() {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-extrabold mb-4">Интересные факты</h1>
+      <h1 className="mb-4 text-4xl font-extrabold">Интересные факты</h1>
       <div className="w-[90%] lg:w-4/5 aspect-video">
         <iframe
           width="100%"
@@ -20,5 +20,5 @@ export default function facts() {
         ></iframe>
       </div>
     </div>
-  );
+  )
 }

@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 interface PostProps {
-  header: String;
-  date: String;
-  children: string | React.JSX.Element | React.JSX.Element[];
+  header: String
+  date: String
+  children: string | React.JSX.Element | React.JSX.Element[]
 }
 
 export default function Post(props: PostProps) {
   return (
-    <div className="border-2 border-yellow-600 rounded-xl w-[500px] p-4">
-      <h1 className="text-4xl text-center font-bold">{props.header}</h1>
-      <p className="font-bold text-lg text-zinc-300">От {props.date}</p>
-      <p className="font-bold text-xl text-zinc-200">Список изменений: </p>
+    <div className="p-4 rounded-xl border-2 border-yellow-600 w-[500px]">
+      <h1 className="text-4xl font-bold text-center">{props.header}</h1>
+      <p className="text-lg font-bold text-zinc-300">От {props.date}</p>
+      <p className="text-xl font-bold text-zinc-200">Список изменений: </p>
       {props.children}
     </div>
-  );
+  )
 }

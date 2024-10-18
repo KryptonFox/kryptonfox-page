@@ -1,16 +1,16 @@
-import LinkButton from '@/components/LinkButton';
+import LinkButton from '@/components/LinkButton'
 
 export default function Page() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[75vh]">
-      <h1 className="text-[2rem] md:text-[3.5rem] font-extrabold after:content-['🦊']">
-        Hi, i`m Krypton<span className="text-orange-600">Fox</span>
+    <div className="flex flex-col justify-center items-center min-h-[75vh]">
+      <h1 className="font-extrabold text-[2rem] md:text-[3.5rem]">
+        Hi, i`m Krypton<span className="text-orange-600">Fox🦊</span>
       </h1>
-      <div className="flex flex-wrap justify-center text-center text-sm md:text-base space-x-2">
+      <div className="flex flex-wrap justify-center space-x-2 text-sm text-center md:text-base">
         <LinkButton href="/about">Обо мне</LinkButton>
         <LinkButton href="/about/socials">Контакты</LinkButton>
         <LinkButton href="/url-shortener">Сокращатель ссылок</LinkButton>
       </div>
     </div>
-  );
+  )
 }

@@ -1,8 +1,7 @@
-import SidebarTab from '@/components/SidebarTab';
-import { Menu } from '@headlessui/react';
-import React from 'react';
-import MobileSidebar from './MobileSidebar';
-import { linkList } from './sidebarList';
+import SidebarTab from '@/components/SidebarTab'
+import React from 'react'
+import MobileSidebar from './MobileSidebar'
+import { linkList } from './sidebarList'
 
 export default function Sidebar() {
   return (
@@ -14,9 +13,9 @@ export default function Sidebar() {
           ))}
         </nav>
       </aside>
-      <aside className="md:hidden w-2 z-50">
+      <aside className="z-50 w-2 md:hidden">
         <MobileSidebar />
       </aside>
     </>
-  );
+  )
 }
