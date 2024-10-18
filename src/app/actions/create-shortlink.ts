@@ -1,9 +1,10 @@
 'use server'
 
 const status = {
-  221: 'Неправильное короткое имя ссылки!',
-  222: 'Несуществующая ссылка!',
-  224: 'Эта ссылка уже занята',
+  'URL is invalid': 'Неправильная ссылка!',
+  'Restricted characters': 'Неправильное короткое имя ссылки!',
+  'The name is too short': 'Слишком короткое имя ссылки',
+  'Name is used': 'Эта ссылка уже занята',
 }
 
 export async function createShortlink(
@@ -11,28 +12,29 @@ export async function createShortlink(
   formData: FormData,
 ): Promise<{ message: string | undefined; url?: string }> {
   const url = formData.get('url')
-  const shortname = formData.get('shortname')
+  const name = formData.get('shortname')
 
   if (!url)
     return {
       message: 'Введите ссылку!',
     }
 
-  if (shortname)
-    if (!/^[a-z0-9_-]+$/.test(String(shortname)))
+  if (name)
+    if (!/^[a-zA-Z0-9_-]+$/.test(String(name)))
       return {
         message: 'Неправильный формат имени короткой ссылки!',
       }
 
-  const response = await fetch(
-    `https://krfx.ru/api/shortlink?url=${url}${
-      shortname ? '&shortname=' + shortname : ''
-    }`,
-    { method: 'PUT' },
-  )
+  const response = await fetch(`https://krfx.ru/api/links/create`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url, name }),
+  })
+
   const json = await response.json()
+  console.log(json)
   return {
-    message: status[json.code],
+    message: status[json.error],
     url: json.url,
   }
 }
