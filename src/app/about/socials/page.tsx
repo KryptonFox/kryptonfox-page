@@ -3,8 +3,8 @@ import SocialLink from './socialLink'
 export default function about() {
   return (
     <>
-      <h1 className="text-4xl font-extrabold text-center">Социальные сети</h1>
-      <div className="flex flex-wrap gap-4 justify-center mt-4">
+      <h1 className="text-center text-4xl font-extrabold">Социальные сети</h1>
+      <div className="mt-4 flex flex-wrap justify-center gap-4">
         <SocialLink
           title="@Krypt0nF"
           href="https://t.me/Krypt0nF"

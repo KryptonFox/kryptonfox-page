@@ -13,8 +13,8 @@ export default function SidebarTab({ name, href }: SidebartabProps) {
     <Link
       className={
         href === pathname
-          ? 'hover:bg-zinc-800/50 px-4 py-1.5 rounded-lg my-1 transition duration-300 text-lg font-extrabold text-yellow-400 bg-yellow-600/10'
-          : 'hover:bg-zinc-800/50 px-4 py-1.5 rounded-lg my-1 transition duration-300 text-lg font-semibold'
+          ? 'my-1 rounded-lg bg-yellow-600/10 px-4 py-1.5 text-lg font-extrabold text-yellow-400 transition duration-300 hover:bg-zinc-800/50'
+          : 'my-1 rounded-lg px-4 py-1.5 text-lg font-semibold transition duration-300 hover:bg-zinc-800/50'
       }
       href={href}
     >

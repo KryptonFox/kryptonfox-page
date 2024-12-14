@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function GithubLink() {
   return (
     <a
-      className="flex gap-2 items-center py-1.5 px-3 rounded-lg border border-white transition-colors hover:bg-zinc-900"
+      className="flex items-center gap-2 rounded-lg border border-white px-3 py-1.5 transition-colors hover:bg-zinc-900"
       href="https://github.com/KirikLit/kryptonfox-page"
       target="_blank"
     >

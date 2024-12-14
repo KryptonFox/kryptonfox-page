@@ -1,18 +1,22 @@
-import React from 'react'
+import type { ReactNode } from 'react'
 
 interface PostProps {
   header: String
   date: String
-  children: string | React.JSX.Element | React.JSX.Element[]
+  children: ReactNode
 }
 
-export default function Post(props: PostProps) {
+export default function Post({
+  header,
+  date,
+  children,
+}: PostProps): JSX.Element {
   return (
-    <div className="p-4 rounded-xl border-2 border-yellow-600 w-[500px]">
-      <h1 className="text-4xl font-bold text-center">{props.header}</h1>
-      <p className="text-lg font-bold text-zinc-300">От {props.date}</p>
+    <div className="mx-3 max-w-[500px] space-y-1 rounded-xl border-2 border-indigo-900 p-6">
+      <h1 className="text-center text-4xl font-extrabold">{header}</h1>
+      <p className="text-lg font-bold text-zinc-300">От {date}</p>
       <p className="text-xl font-bold text-zinc-200">Список изменений: </p>
-      {props.children}
+      <ul className="ml-6 list-disc text-zinc-400">{children}</ul>
     </div>
   )
 }

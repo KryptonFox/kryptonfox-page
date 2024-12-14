@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import Sidebar from './Sidebar'
+import Sidebar from '../../components/sidebar/Sidebar'
 
 export const metadata: Metadata = {
   title: 'Обо мне',
@@ -7,9 +7,9 @@ export const metadata: Metadata = {
 
 export default function layout({ children }) {
   return (
-    <div className="flex">
+    <div className="grid md:grid-cols-4 lg:grid-cols-5">
       <Sidebar />
-      <article className="w-full md:w-3/4 lg:w-4/5 pr-3 md:pr-0 md:px-10 py-6 min-h-[calc(100vh-var(--header-h))]">
+      <article className="min-h-screen w-full px-4 py-8 md:col-span-3 md:px-10 lg:col-span-4">
         {children}
       </article>
     </div>

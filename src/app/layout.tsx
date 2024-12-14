@@ -1,8 +1,8 @@
 import React from 'react'
 import './globals.css'
 import { Inter, Noto_Color_Emoji, Roboto_Mono } from 'next/font/google'
-import Navbar from '@/app/navbar'
-import Footer from '@/app/footer'
+import Navbar from '@/components/navbar/Navbar'
+import Footer from '@/components/footer/Footer'
 import { Analytics } from '@vercel/analytics/react'
 import { Metadata, Viewport } from 'next'
 
@@ -46,14 +46,14 @@ const robotoMono = Roboto_Mono({
 export default function RootLayout({ children }) {
   return (
     <html
-      className="overflow-x-hidden text-white bg-zinc-950 w-[100vw] scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-900"
+      className="w-[100vw] overflow-x-hidden bg-zinc-950 text-white scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-900"
       lang="ru"
     >
       <body
-        className={`flex flex-col items-center min-h-screen ${inter.className} ${notoEmoji.variable} ${robotoMono.variable}`}
+        className={`flex min-h-screen flex-col items-center ${inter.className} ${notoEmoji.variable} ${robotoMono.variable}`}
       >
         <Navbar />
-        <main className="container min-h-[calc(100vh-var(--header-h))] mt-[var(--header-h)] mx-auto flex-1">
+        <main className="container mx-auto min-h-screen flex-1">
           {children}
         </main>
         <Footer />

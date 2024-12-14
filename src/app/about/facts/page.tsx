@@ -9,7 +9,7 @@ export default function facts() {
   return (
     <div className="flex flex-col items-center">
       <h1 className="mb-4 text-4xl font-extrabold">Интересные факты</h1>
-      <div className="w-[90%] lg:w-4/5 aspect-video">
+      <div className="aspect-video w-[90%] lg:w-4/5">
         <iframe
           width="100%"
           height="100%"

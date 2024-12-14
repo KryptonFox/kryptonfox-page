@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <h1 className="my-4 text-5xl font-extrabold text-center">
+      <h1 className="my-4 text-center text-5xl font-extrabold">
         Сокращатель ссылок
       </h1>
       <CreateLinkForm />
