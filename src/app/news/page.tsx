@@ -3,7 +3,7 @@ import Post from './Post'
 
 export default function page() {
   return (
-    <div className="flex flex-col items-center space-y-4 py-4">
+    <div className="mx-auto grid max-w-[500px] items-center gap-4 py-4">
       <Post header="Обновление 2.0.0" date="15.12.24">
         <li>Изменена цветовая гамма сайта</li>
         <li>Переделаны мобильные меню</li>

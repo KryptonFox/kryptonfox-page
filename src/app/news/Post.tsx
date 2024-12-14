@@ -12,7 +12,7 @@ export default function Post({
   children,
 }: PostProps): JSX.Element {
   return (
-    <div className="mx-3 max-w-[500px] space-y-1 rounded-xl border-2 border-indigo-900 p-6">
+    <div className="mx-3 space-y-1 rounded-xl border-2 border-indigo-900 p-6">
       <h1 className="text-center text-4xl font-extrabold">{header}</h1>
       <p className="text-lg font-bold text-zinc-300">От {date}</p>
       <p className="text-xl font-bold text-zinc-200">Список изменений: </p>
