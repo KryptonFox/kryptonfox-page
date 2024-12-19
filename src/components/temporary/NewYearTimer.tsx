@@ -1,3 +1,5 @@
+'use client'
+
 export function NewYearTimer() {
   const timeElapsed =
     (new Date('2025-01-01T00:00:00Z').getTime() -
@@ -6,8 +8,10 @@ export function NewYearTimer() {
     1000
   return (
     <p className="mt-4 text-lg font-bold text-emerald-600">
-      До нового года
-      {` ${Math.trunc(timeElapsed / 86400)}д. и ${Math.trunc((timeElapsed % 86400) / 3600)}ч.`}
+      <span>🎄До нового года </span>
+      <span className='text-zinc-200'>{Math.trunc(timeElapsed / 86400)}д.</span>
+      <span> и </span>
+      <span className='text-red-600'>{Math.trunc((timeElapsed % 86400) / 3600)}ч.🎄</span>
     </p>
   )
 }
