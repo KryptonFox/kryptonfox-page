@@ -1,12 +1,15 @@
 import GithubLink from '@/components/footer/GithubLink'
 
 const BuildHash = () => (
-  <a
-    className="hover:text-zinc-400 hover:underline"
-    href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_SHA}`}
-  >
-    @{process.env.VERCEL_GIT_COMMIT_SHA.slice(0, 8)}
-  </a>
+  <>
+    <span>@</span>
+    <a
+      className="text-blue-400/60 hover:text-blue-500 hover:underline"
+      href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_SHA}`}
+    >
+      {process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7)}
+    </a>
+  </>
 )
 
 export default function Footer() {
@@ -17,9 +20,9 @@ export default function Footer() {
           <p>made by @KryptonFox, 2024</p>
           <p className="text-xs text-zinc-500">
             build
-            {process.env.VERCEL ? <BuildHash /> : ' '}
+            {process.env.VERCEL && <BuildHash />}
+            <span> from </span>
             <span>
-              from{' '}
               {new Intl.DateTimeFormat('ru-RU', {
                 dateStyle: 'short',
                 timeStyle: 'medium',
