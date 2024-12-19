@@ -4,6 +4,7 @@ const BuildHash = () => (
   <>
     <span>@</span>
     <a
+      target="_blank"
       className="text-blue-400/60 hover:text-blue-500 hover:underline"
       href={`https://github.com/${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}/tree/${process.env.VERCEL_GIT_COMMIT_SHA}`}
     >
@@ -26,6 +27,7 @@ export default function Footer() {
               {new Intl.DateTimeFormat('ru-RU', {
                 dateStyle: 'short',
                 timeStyle: 'medium',
+                timeZone: 'Europe/Moscow',
               }).format(new Date())}
             </span>
           </p>
