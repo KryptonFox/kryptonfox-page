@@ -3,7 +3,6 @@ import Image from 'next/image'
 import KryptonIcon from '@public/krypton-icon.png'
 import { SquareArrowOutUpRight } from 'lucide-react'
 import React from 'react'
-import { NewYearTimer } from '@/components/temporary/NewYearTimer'
 
 export default function Page() {
   return (
@@ -31,7 +30,6 @@ export default function Page() {
           <SquareArrowOutUpRight className="h-5" />
         </LinkButton>
       </div>
-      <NewYearTimer />
     </div>
   )
 }
