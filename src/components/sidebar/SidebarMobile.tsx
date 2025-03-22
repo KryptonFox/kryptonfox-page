@@ -20,7 +20,6 @@ export default function SidebarMobile() {
       { x: menuOpen ? '46vw' : 0 },
       { ease: 'easeInOut', duration: 0.21 },
     )
-    console.log(menuOpen && '46vw')
   }, [buttonRef, animate, menuOpen])
 
   return (

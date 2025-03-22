@@ -9,48 +9,60 @@ export default function SidebarDesktop() {
   const pathname = usePathname()
   const [scope, animate] = useAnimate<HTMLDivElement>()
 
-  const [selectedTab, setSelectedTab] = useState<number>(
-    linkList.findIndex((link) => link.href === pathname),
-  )
   const [hoveredTab, setHoveredTab] = useState<number | undefined>(undefined)
+  const [inScope, setInScope] = useState<boolean>(false)
 
+  // tab select animate
   useEffect(() => {
-    if (selectedTab < 0) setSelectedTab(0)
-
-    const elem = scope.current.children.item(selectedTab)
+    const elem = scope.current.children.item(
+      linkList.findIndex((link) => link.href === pathname),
+    )
     if (!(elem instanceof HTMLElement)) return
     animate(
       'span#select',
       { top: elem.offsetTop, height: elem.offsetHeight },
       { ease: 'easeInOut', duration: 0.2 },
     )
-  }, [animate, scope, selectedTab])
+  }, [animate, scope, pathname])
 
+  // tab hover animate
   useEffect(() => {
-    if (hoveredTab === undefined) return
-    const elem = scope.current.children.item(hoveredTab)
-    if (!(elem instanceof HTMLElement)) return
-    animate(
-      'span#hover',
-      { top: elem.offsetTop, height: elem.offsetHeight, opacity: 1 },
-      { ease: 'easeInOut', duration: 0.2 },
-    )
-    if (hoveredTab === selectedTab) {
-      animate('span#hover', { opacity: 0 }, { duration: 0 })
+    // move hover effect
+    if (hoveredTab !== undefined) {
+      const elem = scope.current.children.item(hoveredTab)
+      if (!(elem instanceof HTMLElement)) return
+      animate(
+        'span#hover',
+        { top: elem.offsetTop, height: elem.offsetHeight, opacity: 1 },
+        { ease: 'easeInOut', duration: 0.2 },
+      )
+    }
+    // remove hover effect
+    if (
+      hoveredTab === linkList.findIndex((link) => link.href === pathname) ||
+      !inScope
+    ) {
+      animate('span#hover', { opacity: 0 }, { duration: 0.1 })
       return
     }
-  }, [animate, hoveredTab, scope, selectedTab])
+  }, [animate, hoveredTab, inScope, pathname, scope])
 
   return (
-    <div ref={scope} className="relative grid">
+    <div
+      ref={scope}
+      className="relative grid"
+      onMouseEnter={() => setInScope(true)}
+      onMouseLeave={() => setInScope(false)}
+    >
       {linkList.map(({ name, href }, index) => (
         <Link
           className={`my-1 rounded-lg px-4 py-1.5 text-lg font-semibold ${href === pathname && 'text-blue-300'}`}
           href={href}
           key={index}
-          onClick={() => setSelectedTab(index)}
           onMouseEnter={() => setHoveredTab(index)}
+          onTouchStart={() => setHoveredTab(index)}
           onMouseLeave={() => setHoveredTab(undefined)}
+          onTouchEnd={() => setHoveredTab(undefined)}
         >
           {name}
         </Link>
