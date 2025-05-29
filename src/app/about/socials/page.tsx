@@ -16,7 +16,7 @@ export default function about() {
           imgSrc="/social/github.png"
         />
         <SocialLink
-          title="Kirik_Lit"
+          title="KryptonFox"
           href="https://steamcommunity.com/id/kryptonfox/"
           imgSrc="/social/steam.png"
         />
