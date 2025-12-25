@@ -1,7 +1,6 @@
 {
   "name": "kryptonfox-page",
-  "version": "2.1.0",
-  "private": true,
+  "version": "2.1.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,27 +9,27 @@
     "prettier": "prettier . --write"
   },
   "dependencies": {
-    "@react-three/drei": "^9.114.5",
-    "@react-three/fiber": "^8.17.10",
-    "@vercel/analytics": "^1.3.1",
-    "autoprefixer": "10.4.20",
-    "eslint": "8.57.1",
-    "eslint-config-next": "14.2.20",
-    "lucide-react": "^0.468.0",
-    "motion": "^11.14.4",
-    "next": "^14.2.20",
-    "postcss": "^8.4.47",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "tailwindcss": "3.4.14",
-    "three": "^0.169.0",
-    "three-stdlib": "^2.33.0"
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@vercel/analytics": "^1.6.1",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.1",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.23.26",
+    "next": "^16.1.1",
+    "postcss": "^8.5.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwindcss": "4.1.18",
+    "three": "^0.182.0",
+    "three-stdlib": "^2.36.1"
   },
   "devDependencies": {
-    "@types/node": "22.7.6",
-    "@types/react": "18.3.11",
-    "prettier": "3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.9",
-    "tailwind-scrollbar": "^3.1.0"
+    "@types/node": "25.0.3",
+    "@types/react": "19.2.7",
+    "prettier": "3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwind-scrollbar": "^4.0.2"
   }
 }

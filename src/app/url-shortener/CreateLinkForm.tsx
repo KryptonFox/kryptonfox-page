@@ -16,7 +16,7 @@ export default function CreateLinkForm() {
             name="url"
             type="text"
             placeholder="прим. https://example.com, example.com"
-            className="w-full rounded-xl border-2 border-yellow-800 bg-zinc-900 px-4 py-1 text-base font-semibold text-zinc-200 outline-none md:w-[70%]"
+            className="w-full rounded-xl border-2 border-yellow-800 bg-zinc-900 px-4 py-1 text-base font-semibold text-zinc-200 outline-hidden md:w-[70%]"
           />
         </label>
         <label className="flex flex-wrap items-center justify-between text-xl font-extrabold">
@@ -27,12 +27,12 @@ export default function CreateLinkForm() {
             type="text"
             pattern="^[a-z0-9_-]+$"
             placeholder="только английские буквы и цифры"
-            className="w-full rounded-xl border-2 border-yellow-800 bg-zinc-900 px-4 py-1 text-base font-semibold text-zinc-200 outline-none md:w-[70%]"
+            className="w-full rounded-xl border-2 border-yellow-800 bg-zinc-900 px-4 py-1 text-base font-semibold text-zinc-200 outline-hidden md:w-[70%]"
           />
         </label>
         <button
           type="submit"
-          className="cursor-pointer rounded-xl border-2 border-yellow-800 bg-zinc-900 py-1 text-xl font-extrabold text-zinc-200 outline-none transition hover:bg-zinc-800 active:bg-zinc-950"
+          className="cursor-pointer rounded-xl border-2 border-yellow-800 bg-zinc-900 py-1 text-xl font-extrabold text-zinc-200 outline-hidden transition hover:bg-zinc-800 active:bg-zinc-950"
         >
           Создать короткую ссылку
         </button>

@@ -46,7 +46,7 @@ const robotoMono = Roboto_Mono({
 export default function RootLayout({ children }) {
   return (
     <html
-      className="w-[100vw] overflow-x-hidden bg-zinc-950 text-white scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-900"
+      className="w-screen overflow-x-hidden bg-zinc-950 text-white scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-900"
       lang="ru"
     >
       <body
