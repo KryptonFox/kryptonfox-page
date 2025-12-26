@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { JSX, ReactNode } from 'react'
 
 interface PostProps {
   header: String

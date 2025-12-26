@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import type { ReactNode } from 'react'
+import { JSX, ReactNode } from 'react'
 import { FolderGit2, Link as LinkIcon } from 'lucide-react'
 import Link from 'next/link'
 
