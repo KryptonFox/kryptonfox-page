@@ -4,7 +4,7 @@ export default function page() {
       <h1 className="text-4xl font-extrabold">
         А это просто пустая страница на которой ничего неть)
       </h1>
-      <p className="my-2 text-2xl font-bold">Чтоби жизнь мёдом не казалась</p>
+      <p className="my-2 text-2xl font-bold">Чтоби дап :p</p>
       <p className="text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, saepe
         reprehenderit. Dolor, atque. Quis veniam, hic minus eum natus atque, in
@@ -171,7 +171,7 @@ export default function page() {
         provident at fugiat suscipit, voluptatibus ipsam dicta debitis!
         Distinctio iusto odit velit commodi possimus beatae, vitae blanditiis,
         voluptatibus ullam ad veritatis porro corporis doloribus unde aspernatur
-        quo! Distinctio.
+        quo! Distinctio, а также тестов скролла.
       </p>
     </>
   )

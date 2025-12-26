@@ -16,29 +16,28 @@ export default function page() {
       <div className="mt-8 rounded-xl border border-zinc-700 px-8 py-4">
         <ul className="max-w-max list-[square] space-y-2 font-mono text-lg">
           <li>
-            17 лет <Emoji>👨‍🎓</Emoji>
-          </li>
-          <li>
-            <Emoji>🎂</Emoji> 04 октября
+            18 годиков <Emoji>🎂</Emoji> 04 октября
           </li>
           <li>
             <Emoji>🇷🇺</Emoji>, Санкт-Петербург
           </li>
           <li>
-            Начинающий веб-разработчик <Emoji>💻</Emoji>
+            ITMO SE Student <Emoji>👨‍🎓</Emoji>
           </li>
           <li>
-            Иногда играет в майнкрафт <Emoji>⛏</Emoji>
+            Начинающий разработчик <Emoji>💻🦀</Emoji>
           </li>
           <li>
-            <Emoji>🐾</Emoji> Furry Fox <Emoji>🦊</Emoji>
+            <Emoji>🐾</Emoji> Basic Furry Fox <Emoji>🦊</Emoji>
           </li>
           <li className="list-none text-center">
             <Link
               href={'/about/socials'}
               className="flex items-center justify-center transition hover:underline"
             >
-              <span>Контакты</span>
+              <span>
+                Где я обитаю <Emoji>👀</Emoji>
+              </span>
               <SquareArrowOutUpRight className="ml-1 h-5 w-5" />
             </Link>
           </li>

@@ -19,6 +19,7 @@ export default function facts() {
           allowFullScreen
         ></iframe>
       </div>
+      <p>Моя жизнь слишком неинтересна для интересных фактов...</p>
     </div>
   )
 }
